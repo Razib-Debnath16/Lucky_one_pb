@@ -3,14 +3,14 @@ import './Cart.css';
 import ShowCart from '../ShowCart/ShowCart';
 
 const Cart = (props) => {
-    console.log(props);
+    // console.log(props);
     const { cart } = props;
     if (cart.length > 0) {
         document.getElementById('cart-section').style.display = 'block';
     }
 
     return (
-        <div>
+        <div className='Cart'>
             <h1>Select Shoes</h1>
             <div className='cart-info' id='cart-section'>
                 {

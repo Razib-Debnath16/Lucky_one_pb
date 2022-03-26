@@ -12,9 +12,14 @@ const Shop = () => {
             .then(data => setProducts(data))
     }, []);
     const handleAddToCart = (product) => {
-        console.log(product);
-        // console.log(cart);
-        if (cart.length < 4) {
+        let count = 0;
+        for (const id of cart) {
+            if (id.id === product.id) {
+                count++;
+
+            }
+        }
+        if (count === 0) {
             const newCart = [...cart, product];
             setCart(newCart);
         }

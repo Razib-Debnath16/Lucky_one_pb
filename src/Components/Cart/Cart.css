@@ -11,6 +11,10 @@
     color: black;
     border-radius: 5px;
 }
+.Cart {
+    position: sticky;
+    top: 0;
+}
 .cart-info {
    align-items: center;
    justify-content: center;
