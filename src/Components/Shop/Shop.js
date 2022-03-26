@@ -12,6 +12,9 @@ const Shop = () => {
             .then(data => setProducts(data))
     }, []);
     const handleAddToCart = (product) => {
+        if (cart.length === 4) {
+            alert('You can only select four of them')
+        }
         let count = 0;
         for (const id of cart) {
             if (id.id === product.id) {
@@ -20,6 +23,7 @@ const Shop = () => {
             }
         }
         if (count === 0 && cart.length < 4) {
+
             const newCart = [...cart, product];
             setCart(newCart);
         }
@@ -28,6 +32,7 @@ const Shop = () => {
     const handleAddToCart2 = () => {
         const newCart2 = [];
         setCart(newCart2);
+        document.getElementById('select-random').style.display = 'none';
     }
 
     return (

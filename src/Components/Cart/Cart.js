@@ -18,7 +18,7 @@ const Cart = (props) => {
         random = Math.floor(Math.random() * 4);
         // eslint-disable-next-line no-unused-expressions
         randomObj = props[random];
-        console.log(randomObj);
+        // console.log(randomObj);
         setrandomobj(randomObj);
         if (props.length === 4) {
             document.getElementById('select-random').style.display = 'flex';
