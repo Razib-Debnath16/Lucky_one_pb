@@ -3,7 +3,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### LiveWebsite link
-(https://www.google.com/)
+(https://phenomenal-frangipane-e1e5a6.netlify.app/)
+
+### github repository link
+(https://github.com/Programming-Hero-Web-Course4/lucky-one-Razib-Debnath16)
 
 ## Available Scripts
 
