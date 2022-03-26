@@ -12,10 +12,13 @@ const Shop = () => {
             .then(data => setProducts(data))
     }, []);
     const handleAddToCart = (product) => {
-        // console.log(product);
-        console.log('cart call')
-        const newCart = [...cart, product];
-        setCart(newCart);
+        console.log(product);
+        // console.log(cart);
+        if (cart.length < 4) {
+            const newCart = [...cart, product];
+            setCart(newCart);
+        }
+
     }
     return (
         <div className='shop-container'>
