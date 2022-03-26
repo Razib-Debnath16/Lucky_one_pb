@@ -31,6 +31,9 @@
       align-items: center;
       justify-content: center;
   }
+  .cart-btn .cart-btn-txt{
+ margin-right: 10px;
+  }
   .cart-btn:hover {
-    background-color: rgb(255, 94, 0);
+    background-color: lightgreen;
   }
