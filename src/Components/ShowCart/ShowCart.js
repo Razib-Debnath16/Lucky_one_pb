@@ -4,10 +4,13 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import './ShowCart.css';
 
 const ShowCart = (props) => {
+    console.log(props)
+    // const { product } = props;
+    const { img, name } = props.product;
     return (
         <div className='Show-item'>
-            <img src={props.product.img} alt="" />
-            <p>{props.product.name}</p>
+            <img src={img} alt="" />
+            <p>{name}</p>
             <button><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></button>
             <br /><br />
         </div>

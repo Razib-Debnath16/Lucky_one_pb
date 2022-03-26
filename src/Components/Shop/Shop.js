@@ -19,12 +19,17 @@ const Shop = () => {
 
             }
         }
-        if (count === 0) {
+        if (count === 0 && cart.length < 4) {
             const newCart = [...cart, product];
             setCart(newCart);
         }
 
     }
+    const handleAddToCart2 = () => {
+        const newCart2 = [];
+        setCart(newCart2);
+    }
+
     return (
         <div className='shop-container'>
             <div className="product-containers">
@@ -33,7 +38,7 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-containers">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart} data={handleAddToCart2}></Cart>
             </div>
         </div>
     );
