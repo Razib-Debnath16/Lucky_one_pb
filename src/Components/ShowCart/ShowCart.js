@@ -4,7 +4,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import './ShowCart.css';
 
 const ShowCart = (props) => {
-    console.log(props)
+    // console.log(props)
     // const { product } = props;
     const { img, name } = props.product;
     return (
