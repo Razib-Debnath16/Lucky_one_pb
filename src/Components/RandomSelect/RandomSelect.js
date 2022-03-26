@@ -4,7 +4,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import './RandomSelect.css';
 
 const RandomSelect = (props) => {
-    // console.log(props.data?.name);
+    console.log(props.data?.name);
     console.log('abc');
     return (
         <div className='random-item'>

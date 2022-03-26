@@ -35,7 +35,7 @@ const Cart = (props) => {
             <button className='btn-1' onClick={() => ChooseOne(cart)}><p>Choose 1 For Me</p></button><br />
             <div>
                 {
-                    <RandomSelect></RandomSelect>
+                    <RandomSelect data={randomObj}></RandomSelect>
                 }
             </div>
             <button className='btn-2' onClick={data}><p>Choose Again</p></button>
